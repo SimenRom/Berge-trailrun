@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "practicalInfo": "Practical info",
+    "trail": "The trail",
+    "background": "Our story",
+    "signup": "Sign up"
+  },
+  "hero": {
+    "date": "September 12, 2026",
+    "subtitle": "A trail run through the mountains around Berge by the Høyanger fjord. Join us for an unforgettable experience.",
+    "cta": "Sign up"
+  },
+  "intro": {
+    "label": "About the race",
+    "title": "Run where nature sets the limits",
+    "text": "Berge Trail Run is a trail running race in the mountains around Berge, just outside the Høyanger fjord. The course takes you through varied terrain with views over fjord and mountains. Hosted by the family hotel Larsgarden Tunhotell — whether you're an experienced runner or just want to try something new, there's a place for you."
+  },
+  "info": {
+    "label": "Practical info",
+    "title": "What you need to know",
+    "date": "Date",
+    "dateValue": "September 12, 2026",
+    "start": "Start",
+    "startValue": "10:00",
+    "distance": "Distance",
+    "distanceValue": "15 km",
+    "location": "Location",
+    "locationValue": "Berge, Høyanger"
+  },
+  "trail": {
+    "label": "The trail",
+    "title": "Follow the path",
+    "mapPlaceholder": "Map coming here",
+    "km": "Kilometers",
+    "elevation": "Elevation",
+    "aidStation": "Aid station"
+  },
+  "photos": {
+    "label": "Photos",
+    "title": "From the terrain"
+  },
+  "signup": {
+    "label": "Sign up",
+    "title": "Ready for the challenge?",
+    "text": "Secure your spot in Berge Trail Run 2026. Limited number of places.",
+    "cta": "Sign up now"
+  },
+  "story": {
+    "label": "Our story",
+    "title": "How it started",
+    "p1": "This is where you tell the story behind the race. What inspired you to create it? What does Berge mean to you? What is the vision?",
+    "p2": "This section gives space for the personal story that makes the race unique. People want to know who's behind it and why.",
+    "imagePlaceholder": "Photo of host / location"
+  },
+  "footer": {
+    "date": "September 12, 2026",
+    "contact": "Questions? Get in touch at hei@bergetrailrun.no"
+  }
+}

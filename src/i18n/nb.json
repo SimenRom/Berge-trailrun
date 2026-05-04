@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "practicalInfo": "Praktisk info",
+    "trail": "Løypa",
+    "background": "Bakgrunnen",
+    "signup": "Påmelding"
+  },
+  "hero": {
+    "date": "12. september 2026",
+    "subtitle": "Et terrengløp i fjellene rundt Berge ved Høyangerfjorden. Bli med på en uforglemmelig opplevelse.",
+    "cta": "Meld deg på"
+  },
+  "intro": {
+    "label": "Om løpet",
+    "title": "Løp der naturen setter grensene",
+    "text": "Berge Trail Run er et terrengløp i fjellene rundt Berge, like utenfor Høyangerfjorden. Løypa tar deg gjennom variert terreng med utsikt over fjord og fjell. Arrangert av familiehotellet Larsgarden Tunhotell — enten du er en erfaren løper eller bare vil prøve noe nytt, her er det plass til deg."
+  },
+  "info": {
+    "label": "Praktisk info",
+    "title": "Det du trenger å vite",
+    "date": "Dato",
+    "dateValue": "12. september 2026",
+    "start": "Start",
+    "startValue": "10:00",
+    "distance": "Distanse",
+    "distanceValue": "15 km",
+    "location": "Sted",
+    "locationValue": "Berge, Høyanger"
+  },
+  "trail": {
+    "label": "Løypa",
+    "title": "Følg stien",
+    "mapPlaceholder": "Kart kommer her",
+    "km": "Kilometer",
+    "elevation": "Høydemeter",
+    "aidStation": "Matpost"
+  },
+  "photos": {
+    "label": "Bilder",
+    "title": "Fra terrenget"
+  },
+  "signup": {
+    "label": "Påmelding",
+    "title": "Klar for utfordringen?",
+    "text": "Sikre deg en plass i Berge Trail Run 2026. Begrenset antall plasser.",
+    "cta": "Meld deg på nå"
+  },
+  "story": {
+    "label": "Bakgrunnen",
+    "title": "Slik startet det",
+    "p1": "Her kan du fortelle historien bak løpet. Hva inspirerte deg til å lage det? Hva betyr Berge for deg? Hva er visjonen?",
+    "p2": "Denne seksjonen gir plass til den personlige historien som gjør løpet unikt. Folk vil vite hvem som står bak og hvorfor.",
+    "imagePlaceholder": "Bilde av arrangør / sted"
+  },
+  "footer": {
+    "date": "12. september 2026",
+    "contact": "Spørsmål? Kontakt oss på hei@bergetrailrun.no"
+  }
+}

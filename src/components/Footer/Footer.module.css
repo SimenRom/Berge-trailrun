@@ -1,0 +1,44 @@
+.footer {
+  background: #44514b;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  color: #fff;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.text {
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+
+.socialLinks {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.socialLinks a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.socialLinks a:hover {
+  color: #c8ba42;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 4rem;
+  }
+}

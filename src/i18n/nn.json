@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "practicalInfo": "Praktisk info",
+    "trail": "Løypa",
+    "background": "Bakgrunnen",
+    "signup": "Påmelding"
+  },
+  "hero": {
+    "date": "12. september 2026",
+    "subtitle": "Eit terrengløp i fjella kring Berge ved Høyangerfjorden. Ver med på ei ugløymeleg oppleving.",
+    "cta": "Meld deg på"
+  },
+  "intro": {
+    "label": "Om løpet",
+    "title": "Løp der naturen set grensene",
+    "text": "Berge Trail Run er eit terrengløp i fjella kring Berge, like utanfor Høyangerfjorden. Løypa tek deg gjennom variert terreng med utsikt over fjord og fjell. Arrangert av familiehotellet Larsgarden Tunhotell — anten du er ein erfaren løpar eller berre vil prøva noko nytt, her er det plass til deg."
+  },
+  "info": {
+    "label": "Praktisk info",
+    "title": "Det du treng å vita",
+    "date": "Dato",
+    "dateValue": "12. september 2026",
+    "start": "Start",
+    "startValue": "10:00",
+    "distance": "Distanse",
+    "distanceValue": "15 km",
+    "location": "Stad",
+    "locationValue": "Berge, Høyanger"
+  },
+  "trail": {
+    "label": "Løypa",
+    "title": "Følg stien",
+    "mapPlaceholder": "Kart kjem her",
+    "km": "Kilometer",
+    "elevation": "Høgdemeter",
+    "aidStation": "Matpost"
+  },
+  "photos": {
+    "label": "Bilete",
+    "title": "Frå terrenget"
+  },
+  "signup": {
+    "label": "Påmelding",
+    "title": "Klar for utfordringa?",
+    "text": "Sikre deg ein plass i Berge Trail Run 2026. Avgrensa tal på plassar.",
+    "cta": "Meld deg på no"
+  },
+  "story": {
+    "label": "Bakgrunnen",
+    "title": "Slik starta det",
+    "p1": "Her kan du fortelja historia bak løpet. Kva inspirerte deg til å laga det? Kva tyder Berge for deg? Kva er visjonen?",
+    "p2": "Denne seksjonen gjev plass til den personlege historia som gjer løpet unikt. Folk vil vita kven som står bak og kvifor.",
+    "imagePlaceholder": "Bilete av arrangør / stad"
+  },
+  "footer": {
+    "date": "12. september 2026",
+    "contact": "Spørsmål? Ta kontakt på hei@bergetrailrun.no"
+  }
+}

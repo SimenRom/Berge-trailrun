@@ -1,0 +1,74 @@
+.section {
+  padding: 4rem 1.5rem;
+  background: #e5e5e5;
+}
+
+.label {
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c8ba42;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  color: #44514b;
+  margin-bottom: 1.5rem;
+  line-height: 1.2;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+  margin-top: 1rem;
+}
+
+.card {
+  background: #fff;
+  padding: 1.75rem;
+  border-left: 4px solid #c8ba42;
+}
+
+.cardLabel {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #44514b;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.cardValue {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+@media (min-width: 768px) {
+  .section {
+    padding: 6rem 4rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 7rem 8rem;
+  }
+
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
