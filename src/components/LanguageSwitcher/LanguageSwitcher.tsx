@@ -1,4 +1,5 @@
-import { useLanguage, type Language } from '../../i18n/LanguageContext';
+import { useLanguage } from '../../i18n/useLanguage';
+import type { Language } from '../../i18n/LanguageContextDef';
 import styles from './LanguageSwitcher.module.css';
 
 const options: { value: Language; label: string }[] = [

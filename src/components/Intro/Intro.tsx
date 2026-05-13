@@ -1,4 +1,4 @@
-import { useLanguage } from '../../i18n/LanguageContext';
+import { useLanguage } from '../../i18n/useLanguage';
 import styles from './Intro.module.css';
 
 export default function Intro() {

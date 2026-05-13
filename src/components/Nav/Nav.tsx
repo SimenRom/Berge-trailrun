@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useLanguage } from '../../i18n/LanguageContext';
+import { useLanguage } from '../../i18n/useLanguage';
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import styles from './Nav.module.css';
 

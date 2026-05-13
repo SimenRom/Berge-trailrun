@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="nn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Berge Trail Run — Wireframe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --forest: #44514B;
+      --light: #E5E5E5;
+      --gold: #C8BA42;
+      --white: #FFFFFF;
+      --dark: #1a1a1a;
+    }
+
+    body {
+      font-family: 'Maven Pro', sans-serif;
+      color: var(--dark);
+      background: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+      background: rgba(68, 81, 75, 0.95);
+      backdrop-filter: blur(8px);
+      padding: 1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav .logo {
+      font-family: 'DM Serif Display', serif;
+      color: var(--white);
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+    nav .nav-links {
+      display: none;
+    }
+    nav .hamburger {
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      background: var(--forest);
+      display: flex;
+      align-items: flex-end;
+      padding: 2rem 1.5rem 3rem;
+      overflow: hidden;
+    }
+    .hero-image-placeholder {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        180deg,
+        rgba(68, 81, 75, 0.3) 0%,
+        rgba(68, 81, 75, 0.8) 70%,
+        rgba(68, 81, 75, 1) 100%
+      );
+      z-index: 1;
+    }
+    .hero-image-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background:
+        url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Cpath d='M0 400 L200 150 L350 280 L500 100 L650 220 L800 50 L800 400Z' fill='%23556B5E' opacity='0.4'/%3E%3Cpath d='M0 400 L150 250 L300 350 L450 200 L600 300 L800 180 L800 400Z' fill='%23556B5E' opacity='0.3'/%3E%3C/svg%3E")
+        center / cover no-repeat;
+      z-index: -1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .hero-date {
+      font-size: 0.85rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    .hero h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 3rem;
+      color: var(--white);
+      line-height: 1.1;
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      color: rgba(255,255,255,0.8);
+      font-size: 1rem;
+      max-width: 500px;
+      margin-bottom: 2rem;
+    }
+    .btn-primary {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--forest);
+      padding: 1rem 2.5rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 20px rgba(200, 186, 66, 0.4);
+    }
+    .btn-secondary {
+      display: inline-block;
+      border: 2px solid var(--white);
+      color: var(--white);
+      padding: 0.9rem 2.3rem;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      text-decoration: none;
+      margin-left: 1rem;
+      transition: background 0.2s;
+    }
+    .btn-secondary:hover {
+      background: rgba(255,255,255,0.1);
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 4rem 1.5rem;
+    }
+    .section-label {
+      font-size: 0.75rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+    }
+    .section-title {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      color: var(--forest);
+      margin-bottom: 1.5rem;
+      line-height: 1.2;
+    }
+
+    /* ── INTRO ── */
+    .intro {
+      background: var(--white);
+    }
+    .intro p {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 600px;
+    }
+
+    /* ── INFO CARDS ── */
+    .info-section {
+      background: var(--light);
+    }
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+    .info-card {
+      background: var(--white);
+      padding: 1.75rem;
+      border-left: 4px solid var(--gold);
+    }
+    .info-card h3 {
+      font-size: 0.8rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--forest);
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+    .info-card p {
+      font-size: 1.1rem;
+      color: var(--dark);
+      font-weight: 500;
+    }
+
+    /* ── TRAIL MAP ── */
+    .trail-section {
+      background: var(--forest);
+      color: var(--white);
+    }
+    .trail-section .section-title {
+      color: var(--white);
+    }
+    .map-placeholder {
+      width: 100%;
+      aspect-ratio: 16/10;
+      background: rgba(255,255,255,0.08);
+      border: 2px dashed rgba(255,255,255,0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.4);
+      text-align: center;
+      padding: 2rem;
+    }
+    .trail-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .trail-stat-value {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2rem;
+      color: var(--gold);
+    }
+    .trail-stat-label {
+      font-size: 0.75rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.5);
+      margin-top: 0.25rem;
+    }
+
+    /* ── PHOTO GRID ── */
+    .photos-section {
+      background: var(--white);
+    }
+    .photo-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+    .photo-placeholder {
+      aspect-ratio: 4/3;
+      background: var(--light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 0.85rem;
+    }
+    .photo-placeholder.tall {
+      aspect-ratio: 3/4;
+    }
+
+    /* ── SIGNUP CTA ── */
+    .signup-section {
+      background: var(--gold);
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+    .signup-section .section-title {
+      color: var(--forest);
+    }
+    .signup-section p {
+      color: var(--forest);
+      opacity: 0.8;
+      margin-bottom: 2rem;
+      font-size: 1.05rem;
+    }
+    .signup-section .btn-primary {
+      background: var(--forest);
+      color: var(--white);
+    }
+    .signup-section .btn-primary:hover {
+      box-shadow: 0 4px 20px rgba(68, 81, 75, 0.4);
+    }
+
+    /* ── STORY ── */
+    .story-section {
+      background: var(--white);
+    }
+    .story-section p {
+      color: #555;
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin-bottom: 1rem;
+    }
+    .story-image-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #aaa;
+      font-size: 0.85rem;
+      margin-top: 2rem;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--forest);
+      color: rgba(255,255,255,0.6);
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+    footer .footer-logo {
+      font-family: 'DM Serif Display', serif;
+      color: var(--white);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+    footer p {
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    footer .social-links {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+    }
+    footer .social-links a {
+      color: rgba(255,255,255,0.5);
+      text-decoration: none;
+      font-size: 0.8rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    footer .social-links a:hover {
+      color: var(--gold);
+    }
+
+    /* ══════════════════════════════
+       DESKTOP (768px+)
+       ══════════════════════════════ */
+    @media (min-width: 768px) {
+      nav {
+        padding: 1.25rem 3rem;
+      }
+      nav .hamburger {
+        display: none;
+      }
+      nav .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+      nav .nav-links a {
+        color: rgba(255,255,255,0.8);
+        text-decoration: none;
+        font-size: 0.8rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+      nav .nav-links a:hover {
+        color: var(--gold);
+      }
+
+      section {
+        padding: 6rem 4rem;
+      }
+
+      .hero {
+        padding: 4rem 4rem 5rem;
+      }
+      .hero h1 {
+        font-size: 4.5rem;
+      }
+      .hero p {
+        font-size: 1.15rem;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+      }
+
+      .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+      }
+
+      .trail-stats {
+        max-width: 500px;
+      }
+
+      .photo-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+      }
+
+      .signup-section {
+        padding: 6rem 4rem;
+      }
+
+      .story-layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+      .story-image-placeholder {
+        margin-top: 0;
+        aspect-ratio: 1/1;
+      }
+
+      footer {
+        padding: 4rem;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      section {
+        padding: 7rem 8rem;
+      }
+      .hero {
+        padding: 5rem 8rem 6rem;
+      }
+      .hero h1 {
+        font-size: 5.5rem;
+      }
+      .info-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Berge Trail Run</div>
+    <ul class="nav-links">
+      <li><a href="#info">Praktisk info</a></li>
+      <li><a href="#trail">Løypa</a></li>
+      <li><a href="#story">Bakgrunnen</a></li>
+      <li><a href="#signup">Påmelding</a></li>
+    </ul>
+    <div class="hamburger">☰</div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-image-placeholder"></div>
+    <div class="hero-content">
+      <div class="hero-date">12. September 2026</div>
+      <h1>Berge<br>Trail Run</h1>
+      <p>Eit terrengløp i fjella kring Berge ved Høyangerfjorden. Ver med på ei ugløymeleg oppleving.</p>
+      <a href="#signup" class="btn-primary">Meld deg på</a>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <section class="intro" id="info">
+    <div class="section-label">Om løpet</div>
+    <h2 class="section-title">Løp der naturen set grensene</h2>
+    <p>Berge Trail Run er eit terrengløp i fjella kring Berge, like utanfor Høyangerfjorden. Løypa tek deg gjennom variert terreng med utsikt over fjord og fjell. Arrangert av familiehotellet Larsgarden Tunhotell — anten du er ein erfaren løpar eller berre vil prøva noko nytt, her er det plass til deg.</p>
+  </section>
+
+  <!-- PRACTICAL INFO -->
+  <section class="info-section">
+    <div class="section-label">Praktisk info</div>
+    <h2 class="section-title">Det du treng å vita</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <h3>Dato</h3>
+        <p>12. september 2026</p>
+      </div>
+      <div class="info-card">
+        <h3>Start</h3>
+        <p>10:00</p>
+      </div>
+      <div class="info-card">
+        <h3>Distanse</h3>
+        <p>15 km</p>
+      </div>
+      <div class="info-card">
+        <h3>Sted</h3>
+        <p>Berge, Høyanger</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAIL / MAP -->
+  <section class="trail-section" id="trail">
+    <div class="section-label">Løypa</div>
+    <h2 class="section-title">Følg stien</h2>
+    <div class="map-placeholder">
+      [ Kart-embed kjem her — Strava / Mapbox / Google Maps ]
+    </div>
+    <div class="trail-stats">
+      <div>
+        <div class="trail-stat-value">15</div>
+        <div class="trail-stat-label">Kilometer</div>
+      </div>
+      <div>
+        <div class="trail-stat-value">650</div>
+        <div class="trail-stat-label">Høgdemeter</div>
+      </div>
+      <div>
+        <div class="trail-stat-value">1</div>
+        <div class="trail-stat-label">Matpost</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS -->
+  <section class="photos-section">
+    <div class="section-label">Bilete</div>
+    <h2 class="section-title">Frå terrenget</h2>
+    <div class="photo-grid">
+      <div class="photo-placeholder">Bilde 1</div>
+      <div class="photo-placeholder">Bilde 2</div>
+      <div class="photo-placeholder">Bilde 3</div>
+      <div class="photo-placeholder tall">Bilde 4</div>
+      <div class="photo-placeholder">Bilde 5</div>
+      <div class="photo-placeholder">Bilde 6</div>
+    </div>
+  </section>
+
+  <!-- SIGNUP CTA -->
+  <section class="signup-section" id="signup">
+    <div class="section-label" style="color: var(--forest); opacity: 0.6;">Påmelding</div>
+    <h2 class="section-title">Klar for utfordringa?</h2>
+    <p>Sikre deg ein plass i Berge Trail Run 2026. Avgrensa tal på plassar.</p>
+    <a href="#" class="btn-primary">Meld deg på no</a>
+  </section>
+
+  <!-- STORY -->
+  <section class="story-section" id="story">
+    <div class="story-layout">
+      <div>
+        <div class="section-label">Bakgrunnen</div>
+        <h2 class="section-title">Slik starta det</h2>
+        <p>Her kan du fortelja historia bak løpet. Kva inspirerte deg til å laga det? Kva tyder Berge for deg? Kva er visjonen?</p>
+        <p>Denne seksjonen gjev plass til den personlege historia som gjer løpet unikt. Folk vil vita kven som står bak og kvifor.</p>
+      </div>
+      <div class="story-image-placeholder">Bilete av arrangør / stad</div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">Berge Trail Run</div>
+    <p>12. september 2026</p>
+    <p>Spørsmål? Ta kontakt på hei@bergetrailrun.no</p>
+    <div class="social-links">
+      <a href="#">Instagram</a>
+      <a href="#">Facebook</a>
+      <a href="#">Strava</a>
+    </div>
+  </footer>
+
+</body>
+</html>

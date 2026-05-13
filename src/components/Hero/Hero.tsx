@@ -1,4 +1,4 @@
-import { useLanguage } from '../../i18n/LanguageContext';
+import { useLanguage } from '../../i18n/useLanguage';
 import styles from './Hero.module.css';
 
 export default function Hero() {

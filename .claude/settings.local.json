@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(cp -r /Users/simenromstad/Documents/Prosjekter/berge-trailrun-temp/* /Users/simenromstad/Documents/Prosjekter/Berge-trailrun/)",
+      "Bash(cp /Users/simenromstad/Documents/Prosjekter/berge-trailrun-temp/.gitignore /Users/simenromstad/Documents/Prosjekter/Berge-trailrun/)",
+      "Bash(rm -rf /Users/simenromstad/Documents/Prosjekter/berge-trailrun-temp)",
+      "Bash(npm install *)",
+      "Bash(npx tsc *)"
+    ]
+  }
+}

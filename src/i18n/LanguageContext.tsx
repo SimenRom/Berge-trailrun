@@ -1,21 +1,5 @@
-import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
-import nn from './nn.json';
-import nb from './nb.json';
-import en from './en.json';
-
-export type Language = 'nn' | 'nb' | 'en';
-
-const translations = { nn, nb, en } as const;
-
-type Translations = typeof nn;
-
-interface LanguageContextType {
-  lang: Language;
-  t: Translations;
-  setLang: (lang: Language) => void;
-}
-
-const LanguageContext = createContext<LanguageContextType | null>(null);
+import { useState, useCallback, type ReactNode } from 'react';
+import { LanguageContext, translations, type Language } from './LanguageContextDef';
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
   const [lang, setLangState] = useState<Language>(() => {
@@ -36,10 +20,4 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
       {children}
     </LanguageContext.Provider>
   );
-}
-
-export function useLanguage() {
-  const ctx = useContext(LanguageContext);
-  if (!ctx) throw new Error('useLanguage must be used within LanguageProvider');
-  return ctx;
 }
