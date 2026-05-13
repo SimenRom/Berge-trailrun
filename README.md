@@ -1,6 +1,6 @@
 # Berge Trail Run
 
-Landingsside for Berge Trail Run — eit terrengløp i fjella kring Berge ved Høyangerfjorden. Løpet går av stabelen i september.
+Landingsside for terrengløp i fjella kring Berge ved Sognefjorden.
 
 Lenke til nettsida: https://brave-island-02a7d1003.7.azurestaticapps.net/
 
