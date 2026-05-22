@@ -29,16 +29,12 @@ export default function Trail() {
       ></div>
       <div className={styles.stats}>
         <div>
-          <div className={styles.statValue}>15</div>
+          <div className={styles.statValue}>11</div>
           <div className={styles.statLabel}>{t.trail.km}</div>
         </div>
         <div>
-          <div className={styles.statValue}>650</div>
+          <div className={styles.statValue}>768</div>
           <div className={styles.statLabel}>{t.trail.elevation}</div>
-        </div>
-        <div>
-          <div className={styles.statValue}>1</div>
-          <div className={styles.statLabel}>{t.trail.aidStation}</div>
         </div>
       </div>
     </section>
