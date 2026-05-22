@@ -20,12 +20,12 @@ export default function Trail() {
       <div
         className="strava-embed-placeholder"
         data-embed-type="route"
-        data-embed-id="3489531787275945114"
+        data-embed-id="3492797505461560316"
         data-full-width="true"
-        data-style="hybrid"
-        data-map-hash="11.67/61.1887/5.9805"
+        data-style="standard"
+        data-map-hash="11.59/61.1897/5.9899"
         data-from-embed="true"
-        data-token="9LVQmgHh6wE29GWD9s3pO_YPbXeJ045_U6XytJvo3Dk"
+        data-token="jyffv2oXOgTSXsDYUQg_FQAs84weNOac485WxdhDvwU"
       ></div>
       <div className={styles.stats}>
         <div>
