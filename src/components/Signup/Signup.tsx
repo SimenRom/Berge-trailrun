@@ -1,7 +1,7 @@
 import { useLanguage } from '../../i18n/useLanguage';
 import styles from './Signup.module.css';
 
-const SIGNUP_URL = '#';
+const SIGNUP_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScsKZ1U_-8c8wPiJWvDBsgfMoyCfPLHqlSHVcgNWH3j55Wy7Q/viewform?usp=publish-editor';
 
 export default function Signup() {
   const { t } = useLanguage();
