@@ -8,11 +8,14 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.logo}>Berge Trail Run</div>
       <p className={styles.text}>{t.footer.date}</p>
-      <p className={styles.text}>{t.footer.contact}</p>
+      <p className={styles.text}>
+        {t.footer.contact}{' '}
+        <a href="mailto:bergetrailrun@gmail.com">bergetrailrun@gmail.com</a>
+      </p>
       <div className={styles.socialLinks}>
-        <a href="#">Instagram</a>
-        <a href="#">Facebook</a>
-        <a href="#">Strava</a>
+        <a href="https://www.instagram.com/bergetrailrun" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="https://strava.app.link/R6g1rV9un3b" target="_blank" rel="noopener noreferrer">Strava – Knut</a>
+        <a href="https://strava.app.link/jdAR1Agvn3b" target="_blank" rel="noopener noreferrer">Strava – Lars</a>
       </div>
     </footer>
   );
