@@ -37,6 +37,10 @@
   color: #c8ba42;
 }
 
+.text a {
+  color: inherit;
+}
+
 @media (min-width: 768px) {
   .footer {
     padding: 4rem;
