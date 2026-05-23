@@ -17,7 +17,7 @@
   },
   "info": {
     "label": "Praktisk info",
-    "title": "Det du treng å vita",
+    "title": "Det du treng å vite",
     "date": "Dato",
     "dateValue": "12. september 2026",
     "start": "Start",
@@ -48,8 +48,8 @@
   "story": {
     "label": "Bakgrunnen",
     "title": "Slik starta det",
-    "p1": "Her kan du fortelja historia bak løpet. Kva inspirerte deg til å laga det? Kva tyder Berge for deg? Kva er visjonen?",
-    "p2": "Denne seksjonen gjev plass til den personlege historia som gjer løpet unikt. Folk vil vita kven som står bak og kvifor.",
+    "p1": "Dette løpet blei til fordi vi ønskjer å vise fram området vi vaks opp i. Gjennom oppveksten sprang vi på stiar, grusvegar og fjellryggar rundt bygda.",
+    "p2": "Kjærleiken til fjord, fjell og springeturar har alltid vore ein stor del av livet vårt. No ønskjer vi å dele dette med fleire – og inviterer deg med på ei oppleving av naturen vi har hatt stor glede av.",
     "imagePlaceholder": "Bilete av arrangør / stad"
   },
   "footer": {
