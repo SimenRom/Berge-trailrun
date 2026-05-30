@@ -1,4 +1,5 @@
 import { useLanguage } from '../../i18n/useLanguage';
+import storyImage from '../../assets/story-berge.jpg';
 import styles from './Story.module.css';
 
 export default function Story() {
@@ -13,9 +14,7 @@ export default function Story() {
           <p className={styles.text}>{t.story.p1}</p>
           <p className={styles.text}>{t.story.p2}</p>
         </div>
-        <div className={styles.imagePlaceholder}>
-          {t.story.imagePlaceholder}
-        </div>
+        <img className={styles.image} src={storyImage} alt={t.story.imagePlaceholder} />
       </div>
     </section>
   );
