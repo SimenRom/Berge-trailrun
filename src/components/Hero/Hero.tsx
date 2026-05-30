@@ -1,11 +1,12 @@
 import { useLanguage } from '../../i18n/useLanguage';
 import styles from './Hero.module.css';
+import heroBg from '../../assets/hero-fjord.jpeg';
 
 export default function Hero() {
   const { t } = useLanguage();
 
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} style={{ backgroundImage: `url(${heroBg})` }}>
       <div className={styles.overlay} />
       <div className={styles.content}>
         <div className={styles.date}>{t.hero.date}</div>

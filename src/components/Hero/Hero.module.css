@@ -2,7 +2,10 @@
   position: relative;
   height: 100vh;
   min-height: 600px;
-  background: #44514b;
+  background-color: #44514b;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   display: flex;
   align-items: flex-end;
   padding: 2rem 1.5rem 3rem;
@@ -14,21 +17,11 @@
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(68, 81, 75, 0.3) 0%,
-    rgba(68, 81, 75, 0.8) 70%,
+    rgba(68, 81, 75, 0.2) 0%,
+    rgba(68, 81, 75, 0.7) 70%,
     rgba(68, 81, 75, 1) 100%
   );
   z-index: 1;
-}
-
-.overlay::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 400'%3E%3Cpath d='M0 400 L200 150 L350 280 L500 100 L650 220 L800 50 L800 400Z' fill='%23556B5E' opacity='0.4'/%3E%3Cpath d='M0 400 L150 250 L300 350 L450 200 L600 300 L800 180 L800 400Z' fill='%23556B5E' opacity='0.3'/%3E%3C/svg%3E")
-    center / cover no-repeat;
-  z-index: -1;
 }
 
 .content {
