@@ -1,8 +1,6 @@
 import { useLanguage } from '../../i18n/useLanguage';
 import styles from './Signup.module.css';
 
-const SIGNUP_URL = 'https://docs.google.com/forms/d/e/1FAIpQLScsKZ1U_-8c8wPiJWvDBsgfMoyCfPLHqlSHVcgNWH3j55Wy7Q/viewform?usp=publish-editor';
-
 export default function Signup() {
   const { t } = useLanguage();
 
@@ -11,9 +9,9 @@ export default function Signup() {
       <div className={styles.label}>{t.signup.label}</div>
       <h2 className={styles.title}>{t.signup.title}</h2>
       <p className={styles.text}>{t.signup.text}</p>
-      <a href={SIGNUP_URL} className={styles.cta} target="_blank" rel="noopener noreferrer">
+      <div className={styles.cta}>
         {t.signup.cta}
-      </a>
+      </div>
     </section>
   );
 }
