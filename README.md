@@ -2,4 +2,4 @@
 
 Landingsside for terrengløp i fjella kring Berge ved Sognefjorden.
 
-Lenke til nettsida: http://bergetrailrun.no/
+Lenke til nettsida: https://bergetrailrun.no/
