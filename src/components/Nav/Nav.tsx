@@ -9,7 +9,7 @@ export default function Nav() {
 
   return (
     <nav className={styles.nav}>
-      <a href="#" className={styles.logo}>Berge Trail Run</a>
+      <a href="#" className={styles.logo}>Berge Trailrun</a>
       <ul className={`${styles.links} ${open ? styles.open : ''}`}>
         <li><a href="#info" onClick={() => setOpen(false)}>{t.nav.practicalInfo}</a></li>
         <li><a href="#trail" onClick={() => setOpen(false)}>{t.nav.trail}</a></li>
