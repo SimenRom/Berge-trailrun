@@ -51,7 +51,7 @@ export default function Hero() {
       <div className={styles.content}>
         <div className={styles.date}>{t.hero.date}</div>
         <h1 className={styles.title}>
-          Berge<br />Trail Run
+          Berge<br />Trailrun
         </h1>
         <p className={styles.subtitle}>{t.hero.subtitle}</p>
         <a href="#signup" className={styles.cta}>{t.hero.cta}</a>

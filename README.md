@@ -1,4 +1,4 @@
-# Berge Trail Run
+# Berge Trailrun
 
 Landingsside for terrengløp i fjella kring Berge ved Sognefjorden.
 

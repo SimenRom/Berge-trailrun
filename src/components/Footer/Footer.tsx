@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <footer className={styles.footer}>
-      <div className={styles.logo}>Berge Trail Run</div>
+      <div className={styles.logo}>Berge Trailrun</div>
       <p className={styles.text}>{t.footer.date}</p>
       <p className={styles.text}>
         {t.footer.contact}{' '}
